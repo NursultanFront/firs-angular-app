@@ -2,7 +2,9 @@
   "name": "@new/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx serve new"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~16.2.0",
@@ -13,6 +15,10 @@
     "@angular/platform-browser": "~16.2.0",
     "@angular/platform-browser-dynamic": "~16.2.0",
     "@angular/router": "~16.2.0",
+    "@ngrx/effects": "^16.2.0",
+    "@ngrx/router-store": "^16.2.0",
+    "@ngrx/store": "^16.2.0",
+    "@ngrx/store-devtools": "^16.2.0",
     "@nx/angular": "16.10.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
