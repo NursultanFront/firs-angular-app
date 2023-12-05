@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@new/feature-user-list": ["libs/feature-user-list/src/index.ts"],
       "@new/user-service": ["libs/data-access/src/index.ts"]
     }
   },
