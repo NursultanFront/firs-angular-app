@@ -1,21 +1,18 @@
-import { createFeature, createReducer, on } from '@ngrx/store';
-import { User } from '../service/user.interface';
-import { userActions } from './user.actions';
+import { createReducer, on } from '@ngrx/store';
 
-export const userNode = 'user';
+import { userActions } from './user.actions';
+import { User } from '../service/user.interface';
 
 export interface UserState {
   users: User[];
 }
 
+export const userNode = 'user';
 const initialState: UserState = {
   users: [],
 };
 
-export const userFeature = createFeature({
-  name: 'user',
-  reducer: createReducer(
-    initialState,
-    on(userActions.getUser, (state) => ({ ...state, users: state.users }))
-  ),
-});
+export const userReducer = createReducer(
+  initialState,
+  on(userActions.getUser, (state) => ({ ...state, users: state.users }))
+);
