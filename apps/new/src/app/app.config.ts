@@ -5,17 +5,17 @@ import {
 } from '@angular/router';
 import { appRoutes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
-import { provideStore } from '@ngrx/store';
-import { reducers } from '../store';
-import { provideStoreDevtools } from '@ngrx/store-devtools';
+// import { provideStore } from '@ngrx/store';
+// import { reducers } from '../store';
+// import { provideStoreDevtools } from '@ngrx/store-devtools';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(appRoutes, withEnabledBlockingInitialNavigation()),
     provideHttpClient(),
-    provideStore(reducers),
-    provideStoreDevtools({
-      maxAge: 25,
-    }),
+    // provideStore(reducers),
+    // provideStoreDevtools({
+    //   maxAge: 25,
+    // }),
   ],
 };
