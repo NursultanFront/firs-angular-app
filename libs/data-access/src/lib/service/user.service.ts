@@ -7,11 +7,12 @@ import { HttpClient } from '@angular/common/http';
 export default class UserService {
   private readonly http = inject(HttpClient);
 
+  /**
+   * Retrieves the list of users.
+   * @return {Observable<IUsers[]>} The list of users.
+   */
+
   public getUsers(): Observable<User[]> {
     return this.http.get<User[]>('https://jsonplaceholder.typicode.com/users');
-  }
-
-  constructor() {
-    this.getUsers().subscribe();
   }
 }
