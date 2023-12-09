@@ -1,5 +1,10 @@
-<p>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores architecto
-  fuga non velit mollitia quibusdam at, nisi animi perferendis soluta alias vel
-  accusamus iste maxime fugiat laboriosam eos pariatur impedit.
-</p>
+<div>
+  <ul>
+    <li *ngFor="let user of users$ | async" [class.hidden]="isHidden(user.id)">
+      <span> {{ user.name }}</span>
+      <button class="delete" (click)="toggleVisibility(user.id)">
+        удалить
+      </button>
+    </li>
+  </ul>
+</div>

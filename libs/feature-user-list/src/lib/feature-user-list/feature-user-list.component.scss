@@ -1,0 +1,30 @@
+ul,
+li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+li {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 2px solid green;
+}
+
+button {
+  padding: 10px;
+  background: transparent;
+  border: 1px solid red;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}

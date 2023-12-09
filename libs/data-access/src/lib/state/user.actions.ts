@@ -6,8 +6,3 @@ export const getUserSuccess = createAction(
   '[USERS] Get User Success',
   props<{ users: User[] }>()
 );
-
-export const userActions = {
-  getUser,
-  getUserSuccess,
-};
